@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" />-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2F4159">
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:gravity="left">
+        <Button
+            android:id="@+id/btnHospitals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hospitals"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#009A9A"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="top"/>
+        <Button
+        android:layout_below="@id/btnHospitals"
+        android:id="@+id/btnTowing"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Towing Services"
+        android:background="#009A9A"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="top"/>
+        <Button
+            android:layout_below="@id/btnTowing"
+            android:id="@+id/btnLogin"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="#009A9A"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="top"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true" />
+</FrameLayout>
